@@ -1,0 +1,58 @@
+.section{
+    max-width: 950px;
+    margin: 0 auto;
+    font-family: "Raleway";
+}
+
+.bannerContainer{
+    object-fit: contain;
+    width: 50%;
+    /*margin: 0 auto;*/
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+.bannerContainer > img{
+    padding: 10px;
+    border-radius: 0 0 5% 35%;
+    background: rgb(240,244,245);
+    background: linear-gradient(315deg, rgba(240,244,245,1) 50%, rgba(61,90,128,1) 100%); 
+    /*-webkit-box-shadow: -19px 8px 20px -4px rgba(0,0,0,0.63); 
+    box-shadow: -19px 8px 20px -4px rgba(0,0,0,0.63);*/
+}
+
+.welcomeTitle{
+    display: flex;
+}
+
+.title{
+    max-width: 50%;
+    margin: 5px;
+    padding: 5px;
+    align-self: flex-start;
+}
+
+.title > h1{
+    margin: 50px 0 0 0;
+    text-align: right;
+    font-size: 45px;
+    text-decoration: underline;
+}
+
+.title > h3{
+    margin: 20px 0 0 0;
+    font-size: 30px;
+    text-align: right;
+    
+    color: rgb(76, 76, 76);
+}
+
+.descriptionHomePage{
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+.descriptionHomePage > p{
+    font-size: 21px;
+    line-height: 29px;
+}

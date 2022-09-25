@@ -1,0 +1,22 @@
+.header{
+    background-color: var(--black);
+}
+
+.header > div{
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.logoContainer{
+    max-width: 150px;
+    object-fit: contain;
+}
+
+.logoContainer > img{
+    background-color: white;
+    padding: 15px;
+    border-radius: 25% 15%;
+}
