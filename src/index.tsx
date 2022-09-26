@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import Header from './sharedComponents/header/header';
-
+import Footer from './sharedComponents/footer/footer';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -14,6 +14,7 @@ root.render(
     <BrowserRouter>
       <Header></Header>
       <App />
+      <Footer></Footer>
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -60,3 +60,28 @@
     border-left: 8px solid var(--lightBlue);
     padding-left: 5px;
 }
+
+.containerLinkToFormations{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 30px 0;
+}
+
+.buttonToFormation{
+    cursor: pointer;
+    font-family: "Raleway";
+    font-size: 21px;
+    margin: 0 7px;
+    background-color: rgb(172, 172, 172);
+    box-shadow: 0px 5px 10px -4px rgba(0,0,0,1);
+    padding: 8px 16px;
+    outline: none;
+    border-style: none;
+    border-radius: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+.buttonToFormation:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 7px 15px -4px rgba(0,0,0,1);
+}
