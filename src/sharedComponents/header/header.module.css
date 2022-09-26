@@ -12,7 +12,6 @@
 
 .logoContainer{
     max-width: 150px;
-    object-fit: contain;
 }
 
 .logoContainer > img{

@@ -43,10 +43,32 @@ a{
 
 .activeNav{
   color: var(--orange);
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .nonActiveNav{
-  color: var(--lightBlue)
+  position: relative;
+  color: var(--lightBlue);
+}
+
+.nonActiveNav::after{
+  content: '';
+  left:0;
+  right:0;
+  bottom: -3px;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--blue);
+  transition: all 0.2s ease-in-out;
+}
+
+.nonActiveNav:hover::after{
+  width: 100%;
 }
 
 /*a:link {
