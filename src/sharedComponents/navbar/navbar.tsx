@@ -7,10 +7,10 @@ export default function Navbar(){
                 <ul>
                     <li><NavLink to={"/"} end className={({ isActive }) => isActive ? "activeNav" : "nonActiveNav"}>Accueil</NavLink></li>
                     <li><NavLink to={"/formations"} className={({ isActive }) => isActive ? "activeNav" : "nonActiveNav"}>Formations</NavLink></li>
-                    <li>Qui sommes-nous</li>
-                    <li>Projets européens</li>
-                    <li>Contact</li>
-                    <li>Nos services</li>
+                    <li><NavLink to={"/formations"} className={({ isActive }) => isActive ? "activeNav" : "nonActiveNav"}>Qui sommes-nous</NavLink></li>
+                    <li><NavLink to={"/formations"} className={({ isActive }) => isActive ? "activeNav" : "nonActiveNav"}>Projets européens</NavLink></li>
+                    <li><NavLink to={"/formations"} className={({ isActive }) => isActive ? "activeNav" : "nonActiveNav"}>Contact</NavLink></li>
+                    <li><NavLink to={"/formations"} className={({ isActive }) => isActive ? "activeNav" : "nonActiveNav"}>Nos services</NavLink></li>
                 </ul>
             </div>
         </nav>
