@@ -1,0 +1,16 @@
+.mainContainer{
+    max-width: 1050px;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.linkToDetails{
+    display: inherit;
+    margin: 6px;
+}

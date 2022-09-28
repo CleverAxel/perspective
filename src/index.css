@@ -49,18 +49,18 @@ a{
 .activeNav{
   color: var(--orange);
   text-decoration: underline;
-  font-weight: bold;
+  padding: 3px;
 }
 
 .activeNav:focus{
   outline: 1px solid var(--orange);
-  padding: 3px;
   border-radius: 40px;
 }
 
 .nonActiveNav{
   position: relative;
   color: var(--lightBlue);
+  padding: 3px;
 }
 
 .nonActiveNav:focus{
