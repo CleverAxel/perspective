@@ -40,7 +40,7 @@
     height: 6px;
     margin: 7px 0;
 }
-
+/***********************************************/
 .menuMobile{
     position: fixed;
     top: 0;
@@ -49,6 +49,37 @@
     width: 100%;
     height: 100vh;
     background-color: white;
+    padding: 20px 0;
+    
+    transition: all 0.1s ease-out;
+}
+
+.menuMobile > div{
+    border: 1px solid rgb(42, 42, 42);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.containCloseButton{
+    display: flex;
+    justify-content: center;
+}
+
+.containCloseButton > button{
+    width: 100%;
+    background-color: var(--black);
+    color: var(--lightBlue);
+    font-size: 21px;
+    border-style: none;
+    outline: none;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.containCloseButton > button:hover{
+    filter: brightness(1.2);
 }
 
 @media screen and (max-width: 920px) {

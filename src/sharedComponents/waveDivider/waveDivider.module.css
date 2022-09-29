@@ -39,3 +39,20 @@
     width: calc(145% + 1.3px);
     height: 200px;
 }
+
+@media (max-width: 767px) {
+
+    .waveContainer{
+        margin-bottom: 75px;
+    }
+
+    .topWave svg {
+        width: calc(151% + 1.3px);
+        height: 120px;
+    }
+
+    .bottomWave svg {
+        width: calc(151% + 1.3px);
+        height: 120px;
+    }
+}

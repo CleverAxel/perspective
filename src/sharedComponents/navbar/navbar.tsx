@@ -1,6 +1,9 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import styles from "./navbar.module.css";
+
 export default function Navbar(){
     const [toggleHamburgerMenu, setToggleHamburgerMenu] = useState(false);
 
@@ -35,10 +38,38 @@ export default function Navbar(){
         </button>
 
         {toggleHamburgerMenu && 
-            <div className={styles.menuMobile}></div>
+            <MenuMobile setToggle={setToggleHamburgerMenu}></MenuMobile>
         }
 
         </>
         
     )
+}
+
+function MenuMobile(props:PropsMenuHamburger){
+    const refCallback = useCallback((node:HTMLDivElement) => {
+        if(node){
+            setTimeout(() => {
+                node.style.transform = "";
+            });
+        }
+    },[]);
+    return(
+        <div ref={refCallback} className={styles.menuMobile} style={{transform: "translateY(-100%)"}}>
+            <div>
+
+                <div className={styles.containCloseButton}>
+                    <button onClick={() => {props.setToggle(false)}}>
+                        <FontAwesomeIcon icon={faXmark}></FontAwesomeIcon>
+                    </button>
+                </div>
+
+            </div>
+            
+        </div>
+    )
+}
+
+interface PropsMenuHamburger{
+    setToggle:React.Dispatch<React.SetStateAction<boolean>>
 }
