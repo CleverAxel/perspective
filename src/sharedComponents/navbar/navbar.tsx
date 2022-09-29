@@ -1,7 +1,21 @@
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./navbar.module.css";
 export default function Navbar(){
+    const [toggleHamburgerMenu, setToggleHamburgerMenu] = useState(false);
+
+    useEffect(() => {
+        if(toggleHamburgerMenu){
+            document.body.style.overflow = "hidden";
+        }else{
+            document.body.style.overflow = "";
+        }
+    }, [toggleHamburgerMenu]);
+
+
+
     return(
+        <>
         <nav className={styles.navbar}>
             <div>
                 <ul>
@@ -14,5 +28,17 @@ export default function Navbar(){
                 </ul>
             </div>
         </nav>
+        <button className={styles.hamburgerButton} onClick={() => {setToggleHamburgerMenu(!toggleHamburgerMenu)}}>
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+
+        {toggleHamburgerMenu && 
+            <div className={styles.menuMobile}></div>
+        }
+
+        </>
+        
     )
 }

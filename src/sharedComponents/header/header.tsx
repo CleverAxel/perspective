@@ -9,7 +9,6 @@ export default function Header(){
                 </div>
 
                 <Navbar></Navbar>
-
             </div>
         </header>
     )

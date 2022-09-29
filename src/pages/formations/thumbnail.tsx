@@ -6,7 +6,7 @@ export default function Thumbnail(props:IPropsThumbnail){
         <div className={styles.thumbnail}>
             <div className={styles.imgAndDescription}>
                 <div className={styles.imgContainer}>
-                    <img src={process.env.PUBLIC_URL+props.imgURL} alt="multimédia" />
+                    <img src={process.env.PUBLIC_URL+props.imgURL} alt="img related to the title (lol)" />
                 </div>
 
                 <div className={styles.descriptionContainer}>
