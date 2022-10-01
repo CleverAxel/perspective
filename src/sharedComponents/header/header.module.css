@@ -14,7 +14,7 @@
     max-width: 150px;
 }
 
-.logoContainer > img{
+.logoContainer > a > img{
     background-color: white;
     padding: 15px;
     border-radius: 25% 15%;
@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 790px) {
     .logoContainer{
-        max-width: 100px;
+        max-width: 80px;
         margin-left: 10px;
     }
 }

@@ -45,13 +45,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100000;
     width: 100%;
     height: 100vh;
     background-color: white;
     padding: 20px 0;
     
-    transition: all 0.1s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .menuMobile > div{
@@ -78,6 +78,24 @@
     cursor: pointer;
 }
 
+.navMobile > ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navMobile li{
+    font-size: 21px;
+    
+    padding: 35px 0 10px 10px;
+    border-bottom: 3px solid var(--blue);
+}
+
+/*.navMobile a{
+    display: inline-block;
+    width: 100%;
+}*/
+
 .containCloseButton > button:hover{
     filter: brightness(1.2);
 }
@@ -93,7 +111,7 @@
     }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 800px) {
     .navbar{
         display: none;
     }

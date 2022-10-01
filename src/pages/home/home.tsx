@@ -7,6 +7,7 @@ export default function Home(){
         <section className={styles.section}>
 
             <div className={styles.welcomeTitle}>
+                
                 <div className={styles.title}>
                     <h1>Centre de formation pour adultes</h1>
                     <h3>Chercher seul(e)... ou réussir ensemble ?</h3>

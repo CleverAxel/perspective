@@ -52,6 +52,7 @@
 .descriptionHomePage{
     margin: 0 auto;
     max-width: 750px;
+    padding: 0 7px;
 }
 
 .descriptionHomePage > p{
@@ -79,6 +80,7 @@
     outline: none;
     border-style: none;
     border-radius: 40px;
+    color: black;
     transition: all 0.2s ease-in-out;
 }
 
@@ -100,27 +102,68 @@
         max-width: none;
         height: 100%;
         position: absolute;
+        z-index: 10000;
     }
 
     .title > h1{
         position: absolute;
-        margin: 0;
-        text-align: left;
-        bottom: 25%;
-        width: 65%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        bottom: 10%;
+        width: 100%;
         text-decoration: none;
+        font-size: 37px;
+        background-color: rgba(10, 97, 112,0.5)
     }
 
     .title > h3{
         position: absolute;
-        margin: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
         text-align: center;
-        bottom: 10%;
-        width: 100%;
+        bottom: 0;
+        width: 95%;
+        font-size: 20px;
     }
 
     .bannerContainer{
-        width: 50%;
+        width: 55%;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .bannerContainer{
+        width: 75%;
+    }
+
+    .title > h1{
+        bottom: 5%;
+    }
+
+    .title > h3{
+        bottom: -10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bannerContainer{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .title > h1{
+        width: 100%;
+        font-size: 35px;
+        bottom: 9%;
+    }
+
+    .title > h3{
+        font-size: 19px;
     }
 }

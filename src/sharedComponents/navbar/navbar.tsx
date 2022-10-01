@@ -64,6 +64,17 @@ function MenuMobile(props:PropsMenuHamburger){
                     </button>
                 </div>
 
+                <div className={styles.navMobile}>
+                    <ul>
+                        <NavLink onClick={() => {props.setToggle(false)}} to={"/"} end className={({ isActive }) => isActive ? "activeNavMobile" : "nonActiveNavMobile"}> <li>Accueil</li> </NavLink>
+                        <NavLink onClick={() => {props.setToggle(false)}} to={"/formations"} className={({ isActive }) => isActive ? "activeNavMobile" : "nonActiveNavMobile"}> <li>Formations</li> </NavLink>
+                        <NavLink onClick={() => {props.setToggle(false)}} to={"/formations"} className={({ isActive }) => isActive ? "activeNavMobile" : "nonActiveNavMobile"}> <li>Qui sommes-nous</li> </NavLink>
+                        <NavLink onClick={() => {props.setToggle(false)}} to={"/formations"} className={({ isActive }) => isActive ? "activeNavMobile" : "nonActiveNavMobile"}> <li>Projets européens</li> </NavLink>
+                        <NavLink onClick={() => {props.setToggle(false)}} to={"/formations"} className={({ isActive }) => isActive ? "activeNavMobile" : "nonActiveNavMobile"}> <li>Contact</li> </NavLink>
+                        <NavLink onClick={() => {props.setToggle(false)}} to={"/formations"} className={({ isActive }) => isActive ? "activeNavMobile" : "nonActiveNavMobile"}> <li>Nos services</li> </NavLink>
+                    </ul>
+                </div>
+
             </div>
             
         </div>

@@ -91,6 +91,14 @@ a{
   width: 100%;
 }
 
+.activeNavMobile{
+  color: var(--orange);
+}
+
+.nonActiveNavMobile{
+  color: var(--black)
+}
+
 /*a:link {
   color: black;
 }
