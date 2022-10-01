@@ -1,0 +1,92 @@
+.mainContainer{
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+
+.containerTitle{
+    border-bottom: 1px solid gray;
+}
+
+.containerTitle > h2{
+    font-family: "Raleway";
+    background: rgb(240,244,245);
+    background: linear-gradient(270deg, rgba(240,244,245,1) 0%, rgba(147,187,210,1) 33%);
+    font-weight: normal;
+    display: inline-block;
+    margin: 3px 0;
+    font-size: 35px;
+    padding: 3px 6px;
+
+}
+/********************************/
+.containerDescription{
+    margin: 0 0 20px 0;
+    padding: 0 10px;
+    font-family: "Raleway";
+}
+
+.containerSubTitle > h3{
+    background: linear-gradient(270deg, rgba(240,244,245,1) 0%, var(--orange) 33%);
+    font-weight: normal;
+    display: inline-block;
+    font-size: 21px;
+    margin: 0;
+}
+
+.containerParagraph{
+    margin: 5px 0;
+    padding: 0 5px;
+    max-width: 600px;
+    font-size: 16px;
+}
+
+.containerParagraph > p{
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+.containerParagraph ul{
+    margin: 0;
+    padding: 0 0 10px 15px;
+}
+/***************************************/
+
+.buttonAccordion{
+    cursor: pointer;
+    margin: 10px 0 4px 0;
+    width: 100%;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    color: var(--lightBlue);
+    background-color: var(--black);
+    padding: 20px 5px;
+    text-align: center;
+    border-radius: 40px;
+    border-style: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 19px;
+    box-shadow: 0px 5px 10px -4px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 5px 10px -4px rgba(0,0,0,1);
+    transition: all 0.2s ease-in-out;
+}
+
+.buttonAccordion:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 7px 15px -4px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 7px 15px -4px rgba(0,0,0,1);;
+}
+
+.arrowDown{
+    transition: all 0.1s ease-in-out;
+    margin-left: 7px;
+    color: var(--orange);
+}
+
+.arrowUp{
+    transform: rotate(180deg);
+    transition: all 0.1s ease-in-out;
+    margin-left: 7px;
+    color: var(--orange);
+}
