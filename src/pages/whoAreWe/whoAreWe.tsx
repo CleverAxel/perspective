@@ -1,6 +1,6 @@
 import styles from "./whoAreWe.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBullseye, faEye, faHeart, faLocationDot, faChevronDown, faBook } from '@fortawesome/free-solid-svg-icons'
+import { faBullseye, faEye, faHeart, faLocationDot, faChevronDown, faBook, faUser } from '@fortawesome/free-solid-svg-icons'
 import { useState } from "react";
 import Accordion from "../../sharedComponents/accordion/accordion";
 
@@ -19,56 +19,56 @@ export default function Who_are_we(){
                 button={<ButtonAccordion titleButton="Découvrez nos valeurs, notre mission et notre vision des choses."></ButtonAccordion>}
                 content={
                     <>
-                    <Description title={<h3>Notre vision des choses <FontAwesomeIcon icon={faEye}></FontAwesomeIcon></h3>}
-                description={
-                    <p>
-                        L’association sans but lucratif Perspectives a pour but le développement d’activités sociales, pédagogiques, culturelles et économiques en vue de promouvoir l’emploi et de favoriser l’expression citoyenne.
-                    </p>
-                }></Description>
+                        <Description title={<h3>Notre vision des choses <FontAwesomeIcon icon={faEye}></FontAwesomeIcon></h3>}
+                        description={
+                            <p>
+                                L’association sans but lucratif Perspectives a pour but le développement d’activités sociales, pédagogiques, culturelles et économiques en vue de promouvoir l’emploi et de favoriser l’expression citoyenne.
+                            </p>
+                        }></Description>
 
-                <Description title={<h3>Notre mission <FontAwesomeIcon icon={faBullseye}></FontAwesomeIcon></h3>}
-                description={
-                    <>
-                        <p>
-                            Elle travaille à la facilitation de l’accès à l’emploi pour les travailleurs inoccupés, à travers la dispense de formations pré-qualifiantes ou qualifiantes, d’activités d’intégration socioprofessionnelle et d’orientation.
-                        </p>
-                        <p>
-                            Elle développe également des actions d’éducation non-formelle ou informelle, visant une connaissance critique de la société, l’expression culturelle et une participation active à la vie sociale, économique et politique.
-                        </p>
-                    </>
-                }></Description>
+                        <Description title={<h3>Notre mission <FontAwesomeIcon icon={faBullseye}></FontAwesomeIcon></h3>}
+                        description={
+                            <>
+                                <p>
+                                    Elle travaille à la facilitation de l’accès à l’emploi pour les travailleurs inoccupés, à travers la dispense de formations pré-qualifiantes ou qualifiantes, d’activités d’intégration socioprofessionnelle et d’orientation.
+                                </p>
+                                <p>
+                                    Elle développe également des actions d’éducation non-formelle ou informelle, visant une connaissance critique de la société, l’expression culturelle et une participation active à la vie sociale, économique et politique.
+                                </p>
+                            </>
+                        }></Description>
 
-                <Description title={<h3>Nos valeurs <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon></h3>}
-                description={
-                    <ul>
-                        <li>Le travail, en tant que facteur d’insertion sociale;</li>
-                        <li>La citoyenneté, en tant que facteur de participation active à la vie en société;</li>
-                        <li>Les valeurs d’un service d’intérêt général, dont les principes directeurs sont la continuité, l’adaptabilité, l’égalité et la gratuité.</li>
-                    </ul>
-                }></Description>
+                        <Description title={<h3>Nos valeurs <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon></h3>}
+                        description={
+                            <ul>
+                                <li>Le travail, en tant que facteur d’insertion sociale;</li>
+                                <li>La citoyenneté, en tant que facteur de participation active à la vie en société;</li>
+                                <li>Les valeurs d’un service d’intérêt général, dont les principes directeurs sont la continuité, l’adaptabilité, l’égalité et la gratuité.</li>
+                            </ul>
+                        }></Description>
 
-                <Description title={<h3>Notre positionnement <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon></h3>}
-                description={
-                    <>
-                        <p>
-                        Perspectives est un centre de formations pour demandeurs d’emploi, créé en 1984 et agréé par la Wallonie en tant qu’Organisme d’insertion socioprofessionnelle (OISP), Agence de placement et opérateur de formation du Plan mobilisateur des technologies de l’information et de la communication (PMTIC).
-                        </p>
-                        <p>
-                        Les formations organisées se divisent en deux catégories :
-                        </p>
-                        <ul>
-                            <li>Les courtes (max. 4 mois) visent la redynamisation, la mise en place d’un projet professionnel et la confiance en soi ;</li>
-                            <li>Les longues (max. 9 mois) se basent sur des apprentissages techniques atypiques. Elles permettent d’acquérir des compétences professionnelles de base et mettent en situation réelle de travail, par un stage en entreprise notamment.</li>
-                        </ul>
-                        <p>L’asbl développe également des études et des projets innovants visant à répondre à l’évolution du marché de l’emploi à Flémalle et dans les environs, ainsi que des actions d’éducation permanente et de formations continues.</p>
-                        <p>
-                        En vue de réaliser ses objectifs, elle travaille en étroite collaboration avec les services publics ayant dans leurs compétences directes ou indirectes l’emploi ou la formation, ainsi qu’avec d’autres partenaires publics ou privés.
-                        </p>
-                    </>
-                }></Description>
+                        <Description title={<h3>Notre positionnement <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon></h3>}
+                        description={
+                            <>
+                                <p>
+                                Perspectives est un centre de formations pour demandeurs d’emploi, créé en 1984 et agréé par la Wallonie en tant qu’Organisme d’insertion socioprofessionnelle (OISP), Agence de placement et opérateur de formation du Plan mobilisateur des technologies de l’information et de la communication (PMTIC).
+                                </p>
+                                <p>
+                                Les formations organisées se divisent en deux catégories :
+                                </p>
+                                <ul>
+                                    <li>Les courtes (max. 4 mois) visent la redynamisation, la mise en place d’un projet professionnel et la confiance en soi ;</li>
+                                    <li>Les longues (max. 9 mois) se basent sur des apprentissages techniques atypiques. Elles permettent d’acquérir des compétences professionnelles de base et mettent en situation réelle de travail, par un stage en entreprise notamment.</li>
+                                </ul>
+                                <p>L’asbl développe également des études et des projets innovants visant à répondre à l’évolution du marché de l’emploi à Flémalle et dans les environs, ainsi que des actions d’éducation permanente et de formations continues.</p>
+                                <p>
+                                En vue de réaliser ses objectifs, elle travaille en étroite collaboration avec les services publics ayant dans leurs compétences directes ou indirectes l’emploi ou la formation, ainsi qu’avec d’autres partenaires publics ou privés.
+                                </p>
+                            </>
+                        }></Description>
                     </>
                 }></Accordion>
-
+                {/********************************/}
                 <Accordion
                 transitionInMs={500}
                 button={<ButtonAccordion titleButton="Découvrez l'histoire de la création de l'A.S.B.L"></ButtonAccordion>}
@@ -103,7 +103,25 @@ export default function Who_are_we(){
                 }>
                 </Accordion>
 
-                
+                <Accordion
+                transitionInMs={200}
+                button={<ButtonAccordion titleButton="Nos membres du conseil d'administration"></ButtonAccordion>}
+                content={
+                    <Description
+                    title={<h3>Membres du conseil d’administration <FontAwesomeIcon icon={faUser}></FontAwesomeIcon></h3>}
+                    description={
+                        <>
+                            <ul>
+                                <li>Monsieur Marc SOMBREFFE – Président</li>
+                                <li>Monsieur Marc LAFONTAINE – Administrateur délégué</li>
+                                <li>Madame Catherine MEGALI – Administratrice, Echevine en charge de l’Emploi et de la Formation, Présidente du CPAS</li>
+                                <li>Madame Fabienne DANTINE – Administratrice, Conseillère communale</li>
+                                <li>Monsieur Jacky BRIAN – Administrateur</li>
+                                <li>Monsieur Paul PORTIER – Administrateur</li>
+                            </ul>
+                        </>
+                    }></Description>
+                }></Accordion>
 
             </section>
         </div>

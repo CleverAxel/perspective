@@ -25,7 +25,7 @@ export default function Navbar(){
                     <li><NavLink to={"/"} end className={({ isActive }) => isActive ? "activeNav" : "nonActiveNav"}>Accueil</NavLink></li>
                     <li><NavLink to={"/formations"} className={({ isActive }) => isActive ? "activeNav" : "nonActiveNav"}>Formations</NavLink></li>
                     <li><NavLink to={"/qui-sommes-nous"} className={({ isActive }) => isActive ? "activeNav" : "nonActiveNav"}>Qui sommes-nous</NavLink></li>
-                    <li><NavLink to={"/formations"} className={({ isActive }) => isActive ? "activeNav" : "nonActiveNav"}>Projets européens</NavLink></li>
+                    
                     <li><NavLink to={"/formations"} className={({ isActive }) => isActive ? "activeNav" : "nonActiveNav"}>Contact</NavLink></li>
                     <li><NavLink to={"/formations"} className={({ isActive }) => isActive ? "activeNav" : "nonActiveNav"}>Nos services</NavLink></li>
                 </ul>
@@ -69,7 +69,7 @@ function MenuMobile(props:PropsMenuHamburger){
                         <NavLink onClick={() => {props.setToggle(false)}} to={"/"} end className={({ isActive }) => isActive ? "activeNavMobile" : "nonActiveNavMobile"}> <li>Accueil</li> </NavLink>
                         <NavLink onClick={() => {props.setToggle(false)}} to={"/formations"} className={({ isActive }) => isActive ? "activeNavMobile" : "nonActiveNavMobile"}> <li>Formations</li> </NavLink>
                         <NavLink onClick={() => {props.setToggle(false)}} to={"/qui-sommes-nous"} className={({ isActive }) => isActive ? "activeNavMobile" : "nonActiveNavMobile"}> <li>Qui sommes-nous</li> </NavLink>
-                        <NavLink onClick={() => {props.setToggle(false)}} to={"/formations"} className={({ isActive }) => isActive ? "activeNavMobile" : "nonActiveNavMobile"}> <li>Projets européens</li> </NavLink>
+                        
                         <NavLink onClick={() => {props.setToggle(false)}} to={"/formations"} className={({ isActive }) => isActive ? "activeNavMobile" : "nonActiveNavMobile"}> <li>Contact</li> </NavLink>
                         <NavLink onClick={() => {props.setToggle(false)}} to={"/formations"} className={({ isActive }) => isActive ? "activeNavMobile" : "nonActiveNavMobile"}> <li>Nos services</li> </NavLink>
                     </ul>

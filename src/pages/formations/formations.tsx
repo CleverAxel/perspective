@@ -8,6 +8,9 @@ export default function Formations(){
     return(
         <>
         <div>
+            <div className={styles.containerTitle}>
+                <h2>Nos différentes formations</h2>
+            </div>
             <section className={styles.mainContainer}>
                 <Link to={"/"} className={styles.linkToDetails}>
                     <Thumbnail
