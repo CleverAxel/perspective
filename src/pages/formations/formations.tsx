@@ -1,16 +1,34 @@
 import styles from "./formations.module.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import Thumbnail from './thumbnail'
 import { Link } from "react-router-dom";
+import TitlePage from "../../sharedComponents/titlePage/titlePage";
+
+let objectTest:objectT = {
+    age: 1,
+    value: "l",
+    name: "k"
+}
+//delete cette merde
+type key = {
+    [key:string]:any
+}
+
+interface objectT extends key{
+    value:string,
+    name:string,
+    age:number
+}
 
 export default function Formations(){
+
+    for(let value in objectTest){
+        console.log(objectTest[value])
+    }
+
     return(
         <>
         <div>
-            <div className={styles.containerTitle}>
-                <h2>Nos différentes formations</h2>
-            </div>
+            <TitlePage title="Nos différentes formations"></TitlePage>
             <section className={styles.mainContainer}>
                 <Link to={"/"} className={styles.linkToDetails}>
                     <Thumbnail

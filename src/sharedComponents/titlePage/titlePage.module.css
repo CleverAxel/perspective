@@ -1,0 +1,17 @@
+.containerTitle{
+    border-bottom: 1px solid gray;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+
+.containerTitle > h2{
+    font-family: "Raleway";
+    background: rgb(240,244,245);
+    background: linear-gradient(270deg, rgba(240,244,245,1) 0%, rgba(147,187,210,1) 33%);
+    font-weight: normal;
+    display: inline-block;
+    margin: 3px 0;
+    font-size: 35px;
+    padding: 3px 6px;
+}

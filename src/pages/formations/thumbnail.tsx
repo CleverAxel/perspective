@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styles from "./thumbnail.module.css";
 
 export default function Thumbnail(props:IPropsThumbnail){

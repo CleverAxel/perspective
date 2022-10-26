@@ -3,17 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBullseye, faEye, faHeart, faLocationDot, faChevronDown, faBook, faUser } from '@fortawesome/free-solid-svg-icons'
 import { useState } from "react";
 import Accordion from "../../sharedComponents/accordion/accordion";
+import TitlePage from "../../sharedComponents/titlePage/titlePage";
 
 export default function Who_are_we(){
     return(
         <div>
+            <TitlePage title="Qui sommes-nous ?"></TitlePage>
+            
             <section className={styles.mainContainer}>
-
-                <div className={styles.containerTitle}>
-                    <h2>Qui sommes-nous ?</h2>
-                </div>
-
-                
                 <Accordion
                 transitionInMs={350}
                 button={<ButtonAccordion titleButton="Découvrez nos valeurs, notre mission et notre vision des choses."></ButtonAccordion>}
